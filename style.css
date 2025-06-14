@@ -1,0 +1,43 @@
+body {
+    margin: auto;
+    background-color: rgb(63, 69, 102);
+}
+
+
+#container-a {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#list-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    border: solid black 2px;
+    margin: 100px;
+    margin-left: 550px;
+    margin-right: 550px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#joinb {
+    padding: 11px;
+    box-shadow: 2px 2px black;
+}
+
+#joinb:active{
+    background-color: blue;
+    box-shadow: 0 5px red;
+    transform: translateY(4px);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.newli {
+    list-style: none;
+}
