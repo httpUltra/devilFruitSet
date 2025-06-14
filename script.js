@@ -38,7 +38,7 @@ console.log(randomFruit());
 // let newUser = prompt("username?", "");
 
 // if (!isNaN(newUser)) {
-//   alert("No numbers bitch");
+//   alert("No numbers");
 // } else {
 //   alert("What's up");
 // }
