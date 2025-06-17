@@ -29,32 +29,26 @@ userForm.addEventListener("submit", function (e) {
 const allFruit = Object.values(devilFruits).flat();
 
 function randomFruit() {
-  fruitPull = allFruit[Math.floor(Math.random() * allFruit.length)];
+  if (allFruit.length === 0) {
+    alert("No more fruits")
+  }
+  const index = Math.floor(Math.random() * allFruit.length); // get random index
+  const fruitPull = allFruit.splice(index, 1)[0]; // remove the fruit at that index and get it
   return fruitPull;
 }
 
-console.log(randomFruit());
-
-// let newUser = prompt("username?", "");
-
-// if (!isNaN(newUser)) {
-//   alert("No numbers");
-// } else {
-//   alert("What's up");
-// }
-
-// function assignFruit() {
-// let fruitEater = newUser;
-// console.log(fruitEater + " eater of the " + randomFruit());
-// }
 
 
 
-// 
 
-//    ,##.                   ,==.
-//  ,#    #.                 \ o ',
-// #        #     _     _     \    \
-// #        #    (_)   (_)    /    ;
-//  `#    #'                 /   .'
-//    `##'                   "=="
+
+
+
+
+//function randomFruit() {
+  //fruitPull = allFruit[Math.floor(Math.random() * allFruit.length)];
+  //return fruitPull;
+//}
+//
+//console.log(randomFruit());
+
